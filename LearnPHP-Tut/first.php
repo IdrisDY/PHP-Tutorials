@@ -56,7 +56,28 @@ echo substr('Pamilerin',5,2);
 // strtolower, strrev, trim , str_replace and co...
 }
 test();
-echo $x;
+
+echo var_dump(is_int(4));
+echo var_dump(is_float(4));
+$x = 23465.768;
+$int_cast = (int)$x;
+echo $int_cast;
+
+echo "<br>";
+echo min(45,34,67,34);
+echo max(45,34,67,34);
+// sqrt, round ,rand
+// constants are global
+define ( 'header', 'Book a mall at our place! ' );
+echo header;
+// OTHER constants include NAMESPACE,TRAIT,CLASS
+echo  __DIR__,__CLASS__,__LINE__;
+echo $x .= $y;
+$books = array('Thompson','Doctor');
+if (  1 == 1 ){
+echo 'SAFE';
+};
+print_r($cars === $books)
 ?>
 
 </body>
